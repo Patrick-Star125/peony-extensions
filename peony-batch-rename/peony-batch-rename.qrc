@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/peony-batch-rename-extension_zh_CN.qm</file>
+        <file>translations/peony-batch-rename-extension_tr.qm</file>
+    </qresource>
+</RCC>
