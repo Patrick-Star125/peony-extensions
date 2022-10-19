@@ -32,6 +32,7 @@ public:
     QLineEdit *edit_replace;
     QTableView *names_table;
     QHBoxLayout *horizontalLayout_2;
+    QPushButton *button_apply;
     QPushButton *button_rename;
     QPushButton *button_cancel;
 
@@ -52,7 +53,7 @@ public:
         horizontalLayout->addWidget(label_search);
 
         edit_search = new QLineEdit(RenamePage);
-        edit_search->setObjectName(QString::fromUtf8("edit_former"));
+        edit_search->setObjectName(QString::fromUtf8("edit_search"));
 
         horizontalLayout->addWidget(edit_search);
 
@@ -76,6 +77,11 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        button_apply = new QPushButton(RenamePage);
+        button_apply->setObjectName(QString::fromUtf8("button_apply"));
+
+        horizontalLayout_2->addWidget(button_apply);
+
         button_rename = new QPushButton(RenamePage);
         button_rename->setObjectName(QString::fromUtf8("button_rename"));
 
@@ -103,6 +109,7 @@ public:
         RenamePage->setWindowTitle(QCoreApplication::translate("RenamePage", "RenamePage", nullptr));
         label_search->setText(QCoreApplication::translate("RenamePage", "Search:", nullptr));
         label_replace->setText(QCoreApplication::translate("RenamePage", "Replace with:", nullptr));
+        button_apply->setText(QCoreApplication::translate("RenamePage", "Apply", nullptr));
         button_rename->setText(QCoreApplication::translate("RenamePage", "Rename", nullptr));
         button_cancel->setText(QCoreApplication::translate("RenamePage", "Cancel", nullptr));
     } // retranslateUi
@@ -111,7 +118,7 @@ public:
 
 namespace Ui {
     class RenamePage: public Ui_RenamePage {};
-} // namespace Ui
+} // namespace Uii
 
 QT_END_NAMESPACE
 
